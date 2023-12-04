@@ -2,19 +2,23 @@ import nodemailer from "nodemailer";
 import dotnev from "dotenv";
 
 dotnev.config();
+//new
+let testAccount = await nodemailer.createTestAccount();
 
 let transporter = nodemailer.createTransport({
-  service: "gmail",
+  host: "smtp.etheral.email",
+  port: 587,
+  secure: false,
   auth: {
-    user: process.env.MAIL_EMAIL,
-    pass: process.env.MAIL_SECRET,
+    user: testAccount.user, //process.env.MAIL_EMAIL
+    pass: testAccount.pass,//process.env.MAIL_SECRET,
   },
 });
 
 export const sendMail = (details, callback) => {
   transporter.sendMail(
     {
-      from: `Musicon <${process.env.MAIL_EMAIL}>`,
+      from: `Musicon <${testAccount.user}>`,
       ...details,
     },
     (err, done) => {
