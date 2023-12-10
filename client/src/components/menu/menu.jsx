@@ -248,33 +248,7 @@ const Menu = forwardRef((params, ref) => {
               Library
             </button>
 
-            <button
-              onClick={() => {
-                if (refs?.current) {
-                  import("./functions/fullScreen").then((module) => {
-                    if (module.default()) {
-                      refs.current["fullScreen"].innerHTML = "Exit fullscreen";
-                    } else {
-                      refs.current["fullScreen"].innerHTML = "Fullscreen";
-                    }
-                  });
-                }
-              }}
-            >
-              <span>
-                <Expand width={"16px"} height={"16px"} color={"#711DB0"} />
-              </span>
-              <span
-                data-for="fullScreen"
-                ref={(elem) => {
-                  if (refs?.current) {
-                    refs.current["fullScreen"] = elem;
-                  }
-                }}
-              >
-                Fullscreen
-              </span>
-            </button>
+            
 
             <button
               ref={(elm) => {

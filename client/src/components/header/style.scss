@@ -15,7 +15,7 @@
   .logo_img{
     width: 28px;
     height: 28px;
-    animation: rotateAnimation 1s linear 1;
+    animation: rotateAnimation 1s linear infinite;
   }
     @keyframes rotateAnimation {
       from {

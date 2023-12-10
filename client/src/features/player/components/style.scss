@@ -6,8 +6,9 @@
     position: fixed;
     width: 100%;
     bottom: 0;
-    background: var(--content-bg);
+    background: #711DB0;
     border-top: 1px solid var(--primary-border);
+    color: white;
 
     @media screen and (max-width:700px) {
         height: 5rem;
@@ -20,6 +21,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(calc(100% / 3), 1fr));
         align-items: center;
+        color: white;
 
         audio {
             visibility: hidden;
@@ -36,6 +38,7 @@
             flex-direction: row;
             align-items: center;
             justify-content: left;
+            color: white;
 
             .thumbnail img {
                 border-radius: 5px;
@@ -56,7 +59,7 @@
                     width: auto;
                     font-size: 12.5px;
                     font-weight: 600;
-                    color: var(--text-primary-color);
+                    color: white;
                     @include singleLine;
                 }
 
@@ -64,7 +67,7 @@
                     font-weight: normal;
                     font-size: 11px;
                     width: auto;
-                    color: $TextSecondaryColor;
+                    color: white;
                     @include singleLine;
                 }
             }
@@ -96,13 +99,13 @@
                     cursor: pointer;
 
                     svg {
-                        fill: var(--text-primary-color);
+                        fill: white;
                         @include transi_easy_in_out;
                     }
 
                     &:hover {
                         svg {
-                            fill: $PrimaryColor;
+                            fill: #FFA732;
                         }
                     }
 
@@ -134,7 +137,7 @@
 
                 label {
                     text-align: center;
-                    color: $TextSecondaryColor;
+                    color: white;
                     font-size: 11px;
                     width: 5rem;
                 }
@@ -146,7 +149,7 @@
                     border-radius: 9999px;
                     height: 4px;
                     margin-top: .4rem;
-                    background: linear-gradient(to right, $PrimaryColor 0%, $PrimaryColor 0%, #d9d9db 0%, #d9d9db 0%);
+                    background: linear-gradient(to right, #711DB0 0%, #711DB0 0%, #d9d9db 0%, #d9d9db 0%);
                     @include transi_easy_in_out;
 
                     &::-webkit-slider-thumb {
@@ -204,7 +207,7 @@
             justify-content: right;
 
             svg {
-                fill: var(--text-primary-color);
+                fill: white;
                 margin-right: .5rem;
             }
 
@@ -213,7 +216,7 @@
                 appearance: none;
                 border-radius: 9999px;
                 height: 4px;
-                background: linear-gradient(to right, $PrimaryColor 0%, $PrimaryColor 0%, #d9d9db 0%, #d9d9db 0%);
+                background: linear-gradient(to right, #711DB0 0%, #711DB0 0%, #d9d9db 0%, #d9d9db 0%);
                 @include transi_easy_in_out;
 
                 &::-webkit-slider-thumb {

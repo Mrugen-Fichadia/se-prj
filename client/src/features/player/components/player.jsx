@@ -128,7 +128,7 @@ const Player = () => {
         <div className="volume">
           {
             volume > 0 ? (
-              <Speaker width={"16px"} height={"16px"} />
+              <Speaker width={"16px"} height={"16px"} color={ `#711DB0` } />
             ) : (
               <SpeakerMute width={"16px"} height={"16px"} />
             ) /*speaker volume save on cookie or localStorage */
