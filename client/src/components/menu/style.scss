@@ -46,6 +46,7 @@
             height: 28px;
         }
 
+    
     .inner {
         height: 100%;
         padding: 1rem;
@@ -158,7 +159,7 @@
 
                     &:hover {
                         cursor: pointer;
-                        background: var(--content-bg);
+                        background: #f57f7f;
                     }
 
                     span {
@@ -175,7 +176,8 @@
                     }
 
                     &:is(.active) {
-                        font-weight: 600;
+                        font-weight: 800;
+                        background-color: #FFA732;
                     }
 
                     .swicth {

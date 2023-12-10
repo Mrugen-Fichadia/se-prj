@@ -7,6 +7,7 @@ import { setUser } from "../../redux/user";
 import { useLocation, useNavigate } from "react-router-dom";
 import instance from "../../lib/axios";
 import "./style.scss";
+import { FaGuitar } from "react-icons/fa";
 
 const Menu = forwardRef((params, ref) => {
   const { user } = useSelector((state) => state);
@@ -248,6 +249,17 @@ const Menu = forwardRef((params, ref) => {
               Library
             </button>
 
+            <button
+              className={window.location.pathname === "/musician" ? "active" : ""}
+              onClick={() => {
+                navigate("/musician");
+              }}
+            >
+              <span>
+                <FaGuitar color="#711DB0"/>
+              </span>
+              Musician
+            </button>
             
 
             <button

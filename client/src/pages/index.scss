@@ -1,0 +1,21 @@
+.msc{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+button {
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background: #711DB0;
+    cursor: pointer;
+
+    &:hover {
+        background: #EF4040;
+    }
+}

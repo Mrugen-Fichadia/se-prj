@@ -10,7 +10,8 @@ import {
   Playlist,
   Search,
   Verification,
-  History
+  History,
+  Musician
 } from "./pages";
 import { Footer, Header, Loading, Menu } from "./components";
 import { Auth, Player } from "./features";
@@ -53,6 +54,8 @@ const App = () => {
             <Route exact path="/" element={<Home />} />
 
             <Route path="/music/:id" element={<Music />} />
+
+            <Route path="/musician" element={<Musician/>}></Route>
 
             <Route path="/artist/:id" element={<Collections isArtist />} />
             <Route path="/album/:id" element={<Collections />} />

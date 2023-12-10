@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Tune 1",
+    "artist": "Mrugen Fichadia",
+    "fileUrl": "/src/tune1.mp3",
+    "duration": "2:23"
+  },
+  {
+    "title": "Tune 2",
+    "artist": "Mrugen Fichadia",
+    "fileUrl": "/src/tune2.mp3",
+    "duration": "1:04"
+  }
+]
