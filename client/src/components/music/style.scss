@@ -34,7 +34,7 @@
         width: calc(100% - 4rem);
         max-height: calc(220px - 4rem);
         height: calc(auto - 4rem);
-        fill: var(--text-primary-color);
+        fill: #C21292;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
       }
     }
@@ -54,13 +54,13 @@
       h5 {
         @include singleLine;
         font-weight: 700;
-        color: var(--text-primary-color);
+        color: black;
       }
 
       h1 {
         @include singleLine;
         width: auto;
-        color: $PrimaryColor;
+        color: #711DB0;
         line-height: 3rem;
         font-weight: 800;
       }
@@ -152,7 +152,7 @@
       flex-direction: row;
       height: 2.5rem;
       width: 6rem;
-      background: $PrimaryColor;
+      background: #711DB0;
       border: none;
       border-radius: 10px;
       color: #fff;
@@ -174,7 +174,7 @@
       @include transi_easy_in_out;
 
       svg {
-        fill: var(--text-primary-color);
+        fill: #711DB0;
       }
 
       &:hover {
@@ -182,7 +182,11 @@
       }
 
       &:is(.active) svg {
-        fill: $PrimaryColor;
+        fill: #EF4040;
+        color: #EF4040;
+        border-radius: 2px;
+        border-width: 2px;
+        border-color: blue;
       }
     }
   }

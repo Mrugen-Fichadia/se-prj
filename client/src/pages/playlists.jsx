@@ -179,7 +179,7 @@ const Playlists = () => {
   };
 
   useEffect(() => {
-    document.title = `Musicon - Library`;
+    document.title = `Rythmup - Library`;
 
     let cancelToken = axios.CancelToken.source();
 

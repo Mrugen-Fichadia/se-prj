@@ -14,7 +14,7 @@ const Home = () => {
   const [response, setResponse] = useState({});
 
   useEffect(() => {
-    document.title = `Musicon`;
+    document.title = `Rythmup`;
 
     const cancelToken = axios.CancelToken.source();
 

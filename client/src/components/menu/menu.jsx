@@ -108,10 +108,11 @@ const Menu = forwardRef((params, ref) => {
       <div className="inner">
         <div className="logo_menu">
           <div className="logo">
-            <div className="dot" />
+            {/* <div className="dot" /> */}
+            <img src="/logo-rythmup.png" alt="logo" className="logo_img"/>
           </div>
           <div>
-            <h1>Musicon</h1>
+            <h1>Rythmup</h1>
           </div>
           <div className="bar">
             <button
@@ -192,7 +193,7 @@ const Menu = forwardRef((params, ref) => {
               }}
             >
               <span>
-                <Disc width={"16px"} height={"16px"} color={"#09c478"} />
+                <Disc width={"16px"} height={"16px"} color={"#711DB0"} />
               </span>
               Discover
             </button>
@@ -208,7 +209,7 @@ const Menu = forwardRef((params, ref) => {
               }}
             >
               <span>
-                <MusicIcon width={"16px"} height={"16px"} color={"#09c478"} />
+                <MusicIcon width={"16px"} height={"16px"} color={"#711DB0"} />
               </span>
               Albums
             </button>
@@ -224,7 +225,7 @@ const Menu = forwardRef((params, ref) => {
               }}
             >
               <span>
-                <Mic width={"16px"} height={"16px"} color={"#09c478"} />
+                <Mic width={"16px"} height={"16px"} color={"#711DB0"} />
               </span>
               Artists
             </button>
@@ -242,7 +243,7 @@ const Menu = forwardRef((params, ref) => {
               }}
             >
               <span>
-                <List width={"16px"} height={"16px"} color={"#09c478"} />
+                <List width={"16px"} height={"16px"} color={"#711DB0"} />
               </span>
               Library
             </button>
@@ -261,7 +262,7 @@ const Menu = forwardRef((params, ref) => {
               }}
             >
               <span>
-                <Expand width={"16px"} height={"16px"} color={"#09c478"} />
+                <Expand width={"16px"} height={"16px"} color={"#711DB0"} />
               </span>
               <span
                 data-for="fullScreen"
@@ -292,10 +293,6 @@ const Menu = forwardRef((params, ref) => {
               </span>
               Dark Mode
             </button>
-          </div>
-
-          <div className="rights">
-            <p>@ Copyright {new Date().getFullYear()} Musicon</p>
           </div>
         </div>
       </div>

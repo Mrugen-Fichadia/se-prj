@@ -61,6 +61,7 @@ const LibraryHead = ({ getData, isHistory, clearHistory }) => {
               onClick={() => {
                 navigate("/library/playlists");
               }}
+              className="clr"
             >
               Playlists
             </button>
@@ -68,7 +69,8 @@ const LibraryHead = ({ getData, isHistory, clearHistory }) => {
             <button
               onClick={() => {
                 navigate("/library/history");
-              }}
+                }}
+                className="clr"
             >
               History
             </button>

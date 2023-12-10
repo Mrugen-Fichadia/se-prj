@@ -41,6 +41,11 @@
         }
     }
 
+        .logo_img {
+            width: 28px;
+            height: 28px;
+        }
+
     .inner {
         height: 100%;
         padding: 1rem;
@@ -55,25 +60,7 @@
             position: relative;
             margin: 0 .5rem;
 
-            .logo {
-                position: relative;
-                background: transparent;
-                border: 8px solid $PrimaryColor;
-                border-radius: 50%;
-                width: 7px;
-                height: 7px;
-                margin-right: 5px;
-                animation: logoAnimation .5s ease-in-out forwards;
-
-                .dot {
-                    background: #f5f5f6;
-                    height: 4px;
-                    width: 4px;
-                    margin-left: 9px;
-                    border-radius: 50%;
-                    position: absolute;
-                }
-            }
+            
 
             h1 {
                 margin-left: 3px;
@@ -143,12 +130,12 @@
                         border-radius: 5px;
                         border: none;
                         color: #fff;
-                        background: $PrimaryColor;
+                        background: #711DB0;
                         cursor: pointer;
                         @include transi_easy_in_out;
 
                         &:hover {
-                            background: #09a566;
+                            background: #EF4040;
                         }
                     }
                 }

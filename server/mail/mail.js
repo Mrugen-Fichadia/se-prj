@@ -18,7 +18,7 @@ let transporter = nodemailer.createTransport({
 export const sendMail = (details, callback) => {
   transporter.sendMail(
     {
-      from: `Musicon <${testAccount.user}>`,
+      from: `Rythmup <${testAccount.user}>`,
       ...details,
     },
     (err, done) => {

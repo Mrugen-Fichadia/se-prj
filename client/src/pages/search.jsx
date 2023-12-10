@@ -62,7 +62,7 @@ const Search = () => {
   };
 
   useEffect(() => {
-    document.title = `Musicon - Search ${searchParams.get("q") || ""}`;
+    document.title = `Rythmup - Search ${searchParams.get("q") || ""}`;
 
     const cancelToken = axios.CancelToken.source();
 

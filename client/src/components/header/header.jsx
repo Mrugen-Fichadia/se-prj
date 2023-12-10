@@ -34,11 +34,11 @@ const Header = ({ menuRef }) => {
                 <MenuBar height={"16px"} width={"16px"} color={"#888"} />
               </button>
             </div>
-            <div className="logo">
-              <div className="dot" />
+            <div className="logo_cst">
+              <img src="/logo-rythmup.png" alt="logo" className="logo_img"/>
             </div>
             <div>
-              <h1>Musicon</h1>
+              <h1>Rythmup</h1>
             </div>
           </div>
 

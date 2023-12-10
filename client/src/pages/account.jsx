@@ -99,7 +99,7 @@ const Account = () => {
   };
 
   useEffect(() => {
-    document.title = `Musicon - Account`;
+    document.title = `Rythmup - Account`;
 
     if (user) {
       setTimeout(() => {

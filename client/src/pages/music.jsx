@@ -109,7 +109,7 @@ const Music = () => {
   };
 
   useEffect(() => {
-    document.title = `Musicon`;
+    document.title = `Rythmup`;
 
     const cancelToken = axios.CancelToken.source();
 

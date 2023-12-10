@@ -177,7 +177,7 @@ const Collections = ({ isArtist }) => {
   };
 
   useEffect(() => {
-    document.title = `Musicon - ${isArtist ? "Artist" : "Album"}`;
+    document.title = `Rythmup - ${isArtist ? "Artist" : "Album"}`;
 
     const cancelToken = axios.CancelToken.source();
 
