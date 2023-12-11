@@ -248,7 +248,7 @@ const Menu = forwardRef((params, ref) => {
               </span>
               Library
             </button>
-
+              <div className={user?.name == "Mrugen Fichadia" ? "visible": "hidden"}>
             <button
               className={window.location.pathname === "/musician" ? "active" : ""}
               onClick={() => {
@@ -260,7 +260,7 @@ const Menu = forwardRef((params, ref) => {
               </span>
               Musician
             </button>
-            
+            </div>
 
             <button
               ref={(elm) => {
